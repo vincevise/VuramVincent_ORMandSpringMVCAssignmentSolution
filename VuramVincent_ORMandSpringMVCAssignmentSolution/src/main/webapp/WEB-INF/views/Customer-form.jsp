@@ -17,17 +17,17 @@
 	
 	<style>
 			
-		.title-container{
-			background-color:green;
-			width: 100vw;
-            		height:100px;  
-            		text-align:center;
-		}
+	.title-container{
+		 background-color:green;
+		    width: 100vw;
+            height:100px;  
+            text-align:center;
+	}
 	
-		.title-container h2{
-			color:white;
-			padding:25px;
-		}
+	.title-container h2{
+		color:white;
+		padding:25px;
+	}
 	</style>
 <title>Save Customer</title>
 </head>
@@ -46,7 +46,6 @@
 					class="form-control mb-4 col-4" placeholder="First Name">
 			</div>
 			<div class="form-inline">
-
 				<input type="text" name="last_Name" value="${Customer.lastName}"
 					class="form-control mb-4 col-4" placeholder="Last Name">
 			</div>
@@ -54,9 +53,7 @@
 				<input type="text" name="email" value="${Customer.email}"
 					class="form-control mb-4 col-4" placeholder="Email">
 			</div>
-
 			<button type="submit" class="btn btn-info col-2">Save</button>
-
 		</form>
 		<hr>
 		<a href="/CustomerRelationshipManagement/customers/list">Back to Customer List</a>
