@@ -17,76 +17,49 @@
 	
 	<style>
 			
-	.title-container{
-		 background-color:green;
-		    width: 100vw;
-            height:100px;  
-            text-align:center;
-	}
+		.title-container{
+			background-color:green;
+			width: 100vw;
+            		height:100px;  
+            		text-align:center;
+		}
 	
-	.title-container h2{
-		color:white;
-		padding:25px;
-		
-	}
-	
+		.title-container h2{
+			color:white;
+			padding:25px;
+		}
 	</style>
 <title>Save Customer</title>
-
-
 </head>
 <body>
 	<div class="title-container">
 		<h2>CUSTOMER RELATIONSHIP MANGEMENT</h2>
 	</div>
-		
-		
 		<hr>
-	
-
 	<div class="container">
-
-		
 		<p class="h4 mb-4">Save Customer</p>
-
 		<form action="/CustomerRelationshipManagement/customers/save" method="POST">
-
 			<!-- Add hidden form field to handle update -->
 			<input type="hidden" name="id" value="${Customer.id}" />
-
 			<div class="form-inline">
 				<input type="text" name="first_Name" value="${Customer.firstName}"
 					class="form-control mb-4 col-4" placeholder="First Name">
-
-
-
 			</div>
-
 			<div class="form-inline">
 
 				<input type="text" name="last_Name" value="${Customer.lastName}"
 					class="form-control mb-4 col-4" placeholder="Last Name">
-
-
-
 			</div>
-
 			<div class="form-inline">
-
 				<input type="text" name="email" value="${Customer.email}"
 					class="form-control mb-4 col-4" placeholder="Email">
-
-
-
 			</div>
 
 			<button type="submit" class="btn btn-info col-2">Save</button>
 
 		</form>
-
 		<hr>
 		<a href="/CustomerRelationshipManagement/customers/list">Back to Customer List</a>
-
 	</div>
 	
 </body>
